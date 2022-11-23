@@ -19,7 +19,7 @@ docker ps
 
 docker exec -it X_terminal_container_ID /bin/bash
 
-//On X-Terminal
+// On X-Terminal
 
 su seed
 
@@ -35,11 +35,11 @@ chmod 644 .rhosts
 
 docker exec docker exec -it Trusted_Server_container_ID /bin/bash
 
-//On Trusted Server
+// On Trusted Server
 
 rsh X_Terminal_IP date  
 
-//You will be able to run a remote shell command DATE on X-Terminal without authentication
+// You will be able to run a remote shell command DATE on X-Terminal without authentication
 
 3. Stop the Trusted Server to listen to by SYN flood attack or stopping it
 
@@ -49,7 +49,7 @@ The Setup is complete to execute the Mitnick Attack
 
 # Steps to run the attack
 
-//On Seed-Attacker container
+// On Seed-Attacker container
 
 1. Run spoofSYN.py  
 
@@ -72,7 +72,7 @@ The Setup is complete to execute the Mitnick Attack
 
 # Detect Mitnick Attack
 
-//On X-Terminal
+// On X-Terminal
 
 Run mitnick_detection.py
 
